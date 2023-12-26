@@ -12,6 +12,5 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes), CommonModule],
   exports: [RouterModule] ,
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }]
 })
 export class AppRoutingModule { }
