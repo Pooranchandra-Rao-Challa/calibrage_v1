@@ -1,23 +1,20 @@
 <!--====== Header part start ======-->
 <header class="sticky-header">
     <!-- Header Menu  -->
-    <div class="header-nav">
+    <!-- <div class="header-nav">
         <div class="container-fluid container-1600">
             <div class="nav-container">
-                <!-- Site Logo -->
+                 Site Logo 
                 <div class="site-logo">
                     <a href="index.html"><img src="assets/calibrage-logo_white.png" alt="Logo"></a>
                 </div>
 
-                <!-- Main Menu -->
                 <div class="nav-menu d-lg-flex align-items-center">
 
-                    <!-- Navbar Close Icon -->
                     <div class="navbar-close">
                         <div class="cross-wrap"><span></span><span></span></div>
                     </div>
 
-                    <!-- Mneu Items -->
                     <div class="menu-items">
                         <ul class="m-0">
                             <li>
@@ -59,23 +56,83 @@
                             <li><a href="/contactUs">Contact Us</a></li>
                         </ul>
                     </div>
-                    <!-- Pushed Item -->
                     <div class="nav-pushed-item"></div>
                 </div>
 
-                <!-- Navbar Extra  -->
                 <div class="navbar-extra d-lg-block d-flex align-items-center">
-                    <!-- Navbtn -->
                     <div class="navbar-btn nav-push-item">
                         <a class="main-btn main-btn-3" href="#">Sign In</a>
                     </div>
-                    <!-- Navbar Toggler -->
                     <div class="navbar-toggler">
                         <span></span><span></span><span></span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <nav class="navbar navbar-expand-lg navbar-light header-nav">
+
+        <!-- Site Logo -->
+        <div class="site-logo">
+            <a href="index.html"><img src="assets/calibrage-logo_white.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="nav-link" routerLink="/home">Home</a>
+                </li>
+                <li class="nav-item dropdown has-submemu">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" href="/home">Company</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="/company/aboutUs">About Us</a>
+                        <a class="dropdown-item" routerLink="/company/leadershipteam">Leadership Team</a>
+                        <a class="dropdown-item" routerLink="/company/careers">Careers</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false" href="/home">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" routerLink="/services/webdesign">Web Design & Development</a>
+                        <a class="dropdown-item" routerLink="/services/mobile">Mobile App Development</a>
+                        <a class="dropdown-item" routerLink="/services/bussinessintelligence">Bussiness Intelligence &
+                            Data
+                            Base</a>
+                        <a class="dropdown-item" routerLink="/services/contractprogramming">Contract Programming</a>
+                        <a class="dropdown-item" routerLink="/services/plc">PLC Programming</a>
+                        <a class="dropdown-item" routerLink="/services/technical">Technical Support And
+                            Maintenance</a>
+                        <a class="dropdown-item" routerLink="/services/bpo">BPO(Non Voice Process)</a>
+                        <a class="dropdown-item" routerLink="/services/project">Project Management & Analysis</a>
+                        <a class="dropdown-item" routerLink="/services/consultancy">Consultancy</a>
+                        <a class="dropdown-item" routerLink="/services/outsourcing">OutSourcing</a>
+                        <a class="dropdown-item" routerLink="/services/education">Education/Training</a>
+                        <a class="dropdown-item" routerLink="/services/other">Other IT Services</a>
+                        <a class="dropdown-item" routerLink="/services/ecommerce">ECommerce Application</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" routerLink="/pages/industries">Industries</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" routerLink="/pages/contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Navbar Extra  -->
+        <div class="navbar-extra d-lg-block d-flex align-items-center">
+            <!-- Navbtn -->
+            <div class="navbar-btn nav-push-item">
+                <a class="main-btn main-btn-3" href="#">Sign In</a>
+            </div>
+        </div>
+    </nav>
 </header>
 <!--====== Header part end ======-->
+
+<router-outlet></router-outlet>
