@@ -5,3 +5,40 @@
 .banner-section .single-banner .banner-content .promo-text {
  letter-spacing: 4px !important;
 }
+.project-boxes .project-box .project-desc {
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: -55px;
+    padding: 35px 15px 25px;
+    border-radius: 0px;
+ 
+}
+
+.project-boxes .project-box .project-desc h4 {
+    font-size: 16px !important;
+    font-weight: 600;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+.breadcrumb-section .breadcrumb-text {
+    text-align: left !important;
+}
+.breadcrumb-section .breadcrumb-text .page-title {
+    font-size: 50px !important;
+}
+.breadcrumb-section .breadcrumb-text ul li {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px !important;
+}
+.breadcrumb-section .breadcrumb-text ul li a::after {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 3px !important;
+}
