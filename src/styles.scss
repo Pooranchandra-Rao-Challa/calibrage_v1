@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-.banner-content h1{
+.banner-content h1 {
     font-size: 25px !important;
 }
+
 .banner-section .single-banner .banner-content .promo-text {
- letter-spacing: 4px !important;
+    letter-spacing: 4px !important;
 }
+
 .project-boxes .project-box .project-desc {
     position: absolute;
     left: 0 !important;
@@ -12,7 +14,12 @@
     bottom: -55px;
     padding: 35px 15px 25px;
     border-radius: 0px;
- 
+
+}
+
+.active {
+    background-color:#ff4a17;
+    /* You can change the background color as needed */
 }
 
 .project-boxes .project-box .project-desc h4 {
@@ -22,18 +29,22 @@
     -webkit-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
 }
+
 .breadcrumb-section .breadcrumb-text {
     text-align: left !important;
 }
+
 .breadcrumb-section .breadcrumb-text .page-title {
     font-size: 50px !important;
 }
+
 .breadcrumb-section .breadcrumb-text ul li {
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
     margin: 0px !important;
 }
+
 .breadcrumb-section .breadcrumb-text ul li a::after {
     content: ">";
     position: absolute;
@@ -42,15 +53,20 @@
     transform: translateY(-50%);
     right: 3px !important;
 }
-.navbar-btn .main-btn{
+
+.navbar-btn .main-btn {
     line-height: 40px !important;
     font-weight: 500 !important;
 }
-@media (max-width: 399px){
-    .wcu-section .wcu-video .video-poster-one, .wcu-section .wcu-video::before {
+
+@media (max-width: 399px) {
+
+    .wcu-section .wcu-video .video-poster-one,
+    .wcu-section .wcu-video::before {
         width: 250px !important;
         height: 250px !important;
     }
+
     .wcu-section .wcu-text-two ul li {
         font-weight: 600;
         margin-bottom: 10px;
@@ -58,8 +74,11 @@
         width: 100%;
     }
 }
-@media (max-width: 767px){
-    .wcu-section .wcu-video .video-poster-one, .wcu-section .wcu-video::before {
+
+@media (max-width: 767px) {
+
+    .wcu-section .wcu-video .video-poster-one,
+    .wcu-section .wcu-video::before {
         left: 0;
         width: 380px;
         height: 380px;
