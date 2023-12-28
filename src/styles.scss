@@ -46,3 +46,22 @@
     line-height: 40px !important;
     font-weight: 500 !important;
 }
+@media (max-width: 399px){
+    .wcu-section .wcu-video .video-poster-one, .wcu-section .wcu-video::before {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .wcu-section .wcu-text-two ul li {
+        font-weight: 600;
+        margin-bottom: 10px;
+        float: left;
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    .wcu-section .wcu-video .video-poster-one, .wcu-section .wcu-video::before {
+        left: 0;
+        width: 380px;
+        height: 380px;
+    }
+}
