@@ -3,46 +3,46 @@
     <div class="widget cat-widget">
         <h4 class="widget-title">All Service List</h4>
         <ul>
-            <li>
-                <a routerLink="/services/webdesign" class="active">Web Design & Development<span><i class="far fa-angle-right"></i></span></a>
+            <li  [class.active]="activeRoute === '/services/webdesign'">
+                <a routerLink="/services/webdesign">Web Design & Development<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li  [class.active]="activeRoute === '/services/mobile'">
                 <a routerLink="/services/mobile">Mobile App Development<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li  [class.active]="activeRoute === '/services/bussinessintelligence'">
                 <a routerLink="/services/bussinessintelligence">Business Intelligence & Data Base<span><i
                             class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li  [class.active]="activeRoute === '/services/contract'">
                 <a routerLink="/services/contract">Contract Programming<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li  [class.active]="activeRoute === '/services/plc'">
                 <a routerLink="/services/plc">PLC Programming<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li  [class.active]="activeRoute === '/services/technical'">
                 <a routerLink="/services/technical">Technical Support & Maintenance<span><i
                             class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/bpo'">
                 <a routerLink="/services/bpo">BPO(Non Voice Process)<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/project'">
                 <a routerLink="/services/project">Project Management & Analysis<span><i
                             class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/consultancy'">
                 <a routerLink="/services/consultancy">Consultancy<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/outsourcing'">
                 <a routerLink="/services/outsourcing">Out Sourcing<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/education'">
                 <a routerLink="/services/education">Education/Training<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/other'">
                 <a routerLink="/services/other">Other IT Services<span><i class="far fa-angle-right"></i></span></a>
             </li>
-            <li>
+            <li [class.active]="activeRoute === '/services/ecommerce'">
                 <a routerLink="/services/ecommerce">ECommerce Appllication<span><i class="far fa-angle-right"></i></span></a>
             </li>
         </ul>
