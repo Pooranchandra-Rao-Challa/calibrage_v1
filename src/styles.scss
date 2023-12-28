@@ -16,9 +16,11 @@
     border-radius: 0px;
 
 }
-
-.active {
-    background-color:#ff4a17;
+.active{
+    color:#ff4a17 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color:#ff4a17 !important;
     /* You can change the background color as needed */
 }
 
