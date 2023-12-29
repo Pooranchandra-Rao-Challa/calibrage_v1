@@ -5,6 +5,8 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { PagesService } from '../_services/pages.services';
 
 
 
@@ -15,10 +17,12 @@ import { CommonModule } from '@angular/common';
     ContactusComponent,
   ],
   imports: [
+    HttpClientModule,
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
     PagesRoutingModule
-  ]
+  ],
+  providers:[PagesService]
 })
 export class PagesModule { }
