@@ -17,8 +17,18 @@
 
 }
 
+/* Your component CSS or global styles */
+.is-invalid {
+    border: 1px solid red;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 14px;
+}
+
 .active {
-    background-color:#ff4a17;
+    background-color: #ff4a17;
     /* You can change the background color as needed */
 }
 

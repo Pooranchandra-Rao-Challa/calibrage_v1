@@ -11,10 +11,8 @@ import { ContactusComponent } from './contactus/contactus.component';
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
     { path: 'industries', component: IndustriesComponent },
-    { path: 'contactUs', component: ContactusComponent },    
-
-
-])],
-exports: [RouterModule]
+    { path: 'contactUs', component: ContactusComponent },
+  ])],
+  exports: [RouterModule]
 })
 export class PagesRoutingModule { }

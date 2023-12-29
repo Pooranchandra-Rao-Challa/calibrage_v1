@@ -56,34 +56,76 @@
                         <h2 class="title">Don’t Hesited To Contact Us</h2>
                     </div>
 
-                    <form action="#">
+                    <form [formGroup]="fbcontactUs">
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="input-group mb-30">
-                                    <input type="text" placeholder="Your Full Name">
+                                    <input type="text" placeholder="Your Full Name" formControlName="fullName"
+                                        [maxLength]="50"
+                                        [ngClass]="{ 'is-invalid': FormControls['fullName'].invalid && FormControls['fullName'].touched }" />
                                     <span class="icon"><i class="far fa-user-circle"></i></span>
+                                    <span
+                                        *ngIf="FormControls['fullName'].hasError('required') && FormControls['fullName'].touched"
+                                        class="invalid-feedback">
+                                        Full Name is required.
+                                    </span>
+                                    <span
+                                        *ngIf="FormControls['fullName'].hasError('pattern') && FormControls['fullName'].touched"
+                                        class="invalid-feedback">
+                                        Full Name must be in Aplhabets.
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="input-group mb-30">
-                                    <input type="email" placeholder="Your Email Address">
+                                    <input type="email" placeholder="Your Email Address" formControlName="emailId"
+                                        [ngClass]="{ 'is-invalid': FormControls['emailId'].invalid &&FormControls['emailId'].touched }">
                                     <span class="icon"><i class="far fa-envelope-open"></i></span>
+                                    <span
+                                        *ngIf="FormControls['emailId'].hasError('required') && FormControls['emailId'].touched"
+                                        class="invalid-feedback">
+                                        Email Address is required.
+                                    </span>
+                                    <span
+                                        *ngIf="FormControls['emailId'].hasError('pattern') && FormControls['emailId'].touched"
+                                        class="invalid-feedback">
+                                        Must in Email Format.
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="input-group mb-30">
-                                    <input type="text" placeholder="Your Phone">
+                                    <input type="text" placeholder="Your Phone" formControlName="mobileNumber"
+                                        [maxLength]="10"
+                                        [ngClass]="{ 'is-invalid': FormControls['mobileNumber'].invalid && FormControls['mobileNumber'].touched }">
                                     <span class="icon"><i class="far fa-phone"></i></span>
+                                    <span
+                                        *ngIf="FormControls['mobileNumber'].hasError('required') && FormControls['mobileNumber'].touched"
+                                        class="invalid-feedback">
+                                        Mobile Number is required.
+                                    </span>
+                                    <span
+                                        *ngIf="FormControls['mobileNumber'].hasError('pattern') && FormControls['mobileNumber'].touched"
+                                        class="invalid-feedback">
+                                        First Digit Should Be Greater Than 4 And Must Contains 10 Digits.
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="input-group textarea mb-30">
-                                    <textarea placeholder="Write Message"></textarea>
+                                    <textarea placeholder="Write Message" formControlName="message" [maxLength]="256"
+                                        [ngClass]="{ 'is-invalid': FormControls['message'].invalid &&FormControls['message'].touched }"></textarea>
                                     <span class="icon"><i class="far fa-pencil"></i></span>
+                                    <span
+                                        *ngIf="FormControls['message'].hasError('required') && FormControls['message'].touched"
+                                        class="invalid-feedback">
+                                        Message is required.
+                                    </span>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="main-btn">Send Message</button>
+                                <button type="submit" class="main-btn" [disabled]="fbcontactUs.invalid">Send
+                                    Message</button>
                             </div>
                         </div>
                     </form>

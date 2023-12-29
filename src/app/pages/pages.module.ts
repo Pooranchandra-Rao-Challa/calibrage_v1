@@ -3,6 +3,8 @@ import { HomeComponent } from './home/home.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -13,6 +15,9 @@ import { PagesRoutingModule } from './pages-routing.module';
     ContactusComponent,
   ],
   imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
     PagesRoutingModule
   ]
 })
