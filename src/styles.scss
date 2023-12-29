@@ -16,8 +16,13 @@
     border-radius: 0px;
 
 }
-
-/* Your component CSS or global styles */
+.cat-widget .active{
+    color:#ff4a17 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link {
+    color:#ff4a17 !important;
+    /* You can change the background color as needed */
+}
 .is-invalid {
     border: 1px solid red;
 }
@@ -25,11 +30,6 @@
 .invalid-feedback {
     color: red;
     font-size: 14px;
-}
-
-.active {
-    background-color: #ff4a17;
-    /* You can change the background color as needed */
 }
 
 .project-boxes .project-box .project-desc h4 {
