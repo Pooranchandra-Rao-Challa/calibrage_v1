@@ -61,17 +61,17 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="input-group mb-30">
-                                    <input type="text" placeholder="Your Full Name" formControlName="fullName"
+                                    <input type="text" placeholder="Your Full Name" formControlName="name"
                                         [maxLength]="50"
-                                        [ngClass]="{ 'is-invalid': FormControls['fullName'].invalid && FormControls['fullName'].touched }" />
+                                        [ngClass]="{ 'is-invalid': FormControls['name'].invalid && FormControls['name'].touched }" />
                                     <span class="icon"><i class="far fa-user-circle"></i></span>
                                     <span
-                                        *ngIf="FormControls['fullName'].hasError('required') && FormControls['fullName'].touched"
+                                        *ngIf="FormControls['name'].hasError('required') && FormControls['name'].touched"
                                         class="invalid-feedback">
                                         Full Name is required.
                                     </span>
                                     <span
-                                        *ngIf="FormControls['fullName'].hasError('pattern') && FormControls['fullName'].touched"
+                                        *ngIf="FormControls['name'].hasError('pattern') && FormControls['name'].touched"
                                         class="invalid-feedback">
                                         Full Name must be in Aplhabets.
                                     </span>
@@ -96,17 +96,17 @@
                             </div>
                             <div class="col-lg-4">
                                 <div class="input-group mb-30">
-                                    <input type="text" placeholder="Your Phone" formControlName="mobileNumber"
+                                    <input type="text" placeholder="Your Phone" formControlName="mobileNo"
                                         [maxLength]="10"
-                                        [ngClass]="{ 'is-invalid': FormControls['mobileNumber'].invalid && FormControls['mobileNumber'].touched }">
+                                        [ngClass]="{ 'is-invalid': FormControls['mobileNo'].invalid && FormControls['mobileNo'].touched }">
                                     <span class="icon"><i class="far fa-phone"></i></span>
                                     <span
-                                        *ngIf="FormControls['mobileNumber'].hasError('required') && FormControls['mobileNumber'].touched"
+                                        *ngIf="FormControls['mobileNo'].hasError('required') && FormControls['mobileNo'].touched"
                                         class="invalid-feedback">
                                         Mobile Number is required.
                                     </span>
                                     <span
-                                        *ngIf="FormControls['mobileNumber'].hasError('pattern') && FormControls['mobileNumber'].touched"
+                                        *ngIf="FormControls['mobileNo'].hasError('pattern') && FormControls['mobileNo'].touched"
                                         class="invalid-feedback">
                                         First Digit Should Be Greater Than 4 And Must Contains 10 Digits.
                                     </span>
@@ -124,8 +124,11 @@
                                     </span>
                                 </div>
                             </div>
+                            <div *ngIf="this.response">
+                                Admin Will Send Mail/Call You Back Shortly For Further Discussion.
+                            </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="main-btn" [disabled]="fbcontactUs.invalid">Send
+                                <button type="submit" class="main-btn" [disabled]="fbcontactUs.invalid" (click)="save()">Send
                                     Message</button>
                             </div>
                         </div>
