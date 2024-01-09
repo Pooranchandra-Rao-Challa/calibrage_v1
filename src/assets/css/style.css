@@ -1107,7 +1107,7 @@ header .header-nav .nav-container.breakpoint-on .nav-pushed-item .menu-social-li
 .navbar-light .navbar-nav .nav-link{
   color: black;
   font-weight:bold;
-  padding: 0 20px;
+  padding: 11px 20px;
   margin: 0 20px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
