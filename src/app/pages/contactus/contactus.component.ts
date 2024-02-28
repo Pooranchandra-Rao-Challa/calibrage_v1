@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { ContactUsDto } from 'src/app/_models/pages';
-import { PagesService } from 'src/app/_services/pages.services';
+import { PagesService } from 'src/app/_services/pages.service';
 import { RG_ALPHA_ONLY, RG_EMAIL, RG_PHONE_NO } from 'src/app/shared/regex';
 
 @Component({

@@ -6,7 +6,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { PagesService } from '../_services/pages.services';
+import { PagesService } from '../_services/pages.service';
 
 
 
